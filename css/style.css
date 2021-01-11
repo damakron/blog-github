@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+/* Fontes Especiais */
+@font-face {
+  font-family: "gotham";
+  src: url(../fonts/gotham.woff) format("woff"), url("../fonts/gotham.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "marvel";
+  src: url("../fonts/marvel.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
 /* Configurações Gerais */
 * {
 	padding: 0px;
@@ -13,29 +27,34 @@
 
 /* Corpo da Pagina */
 body {
+	font-size: 16px;
 	background: #808080;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: gotham;
 }
 
 /* Layout de Container */
 .container {
 	max-width: 900px;
-	padding: 0 16px;
+	padding: 8px 16px;
 	margin: auto;
 	background: white;
 }
 
 /* Layout da Navbar */
 #nav-bar {
+	position: sticky;
+	top: 0;
 	background: #1d1d1d;
-	padding: 10px;
+	padding: 6px;
+	box-shadow: 0 4px 5px black;
 }
 #nav-links, #position{
 	text-decoration: none;
 	text-align: center;
 	padding: 14px 20px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: marvel;
 	color: white;
 }
 #nav-links:link, #nav-links:visited{
@@ -52,9 +71,10 @@ body {
 #logo {
 	text-align: center;
 	color: #a21d35;
-	font-size: 36px;
-	padding: 10px;
-	letter-spacing: 2px;
-	font-family: Verdana;
-	font-weight: bold;
+	font-size: 56px;
+	padding: 14px;
+	font-family: marvel;
+} 
+p {
+	padding: 10px 0;
 }
