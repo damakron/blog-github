@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Cores */
+#branco {
+	color: white;
+}
+
+/* Corpo da Pagina */
+body {
+	background: #808080;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Layout de Container */
+.container {
+	max-width: 900px;
+	padding: 0 16px;
+	margin: auto;
+	background: white;
+}
+
+/* Layout da Navbar */
+#nav-bar {
+	background: #1d1d1d;
+	padding: 10px;
+}
+#nav-links, #position{
+	text-decoration: none;
+	text-align: center;
+	padding: 14px 20px;
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+	color: white;
+}
+#nav-links:link, #nav-links:visited{
+	color: #fff;
+	padding: 12px 20px;
+}
+#nav-links:hover{
+	color: #ff3232;
+	background: #fff;
+	border-radius: 10px;
+}
+
+/* Desing de Logo */
+#logo {
+	text-align: center;
+	color: #a21d35;
+	font-size: 36px;
+	padding: 10px;
+	letter-spacing: 2px;
+	font-family: Verdana;
+	font-weight: bold;
+}
