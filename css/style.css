@@ -24,6 +24,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 /* Cores */
@@ -34,9 +35,10 @@
 /* Corpo da Pagina */
 body {
 	font-size: 16px;
-	background: #808080;
+	background: url('../imgs/backgroud.jpeg');
 	font-family: gotham;
 }
+
 
 /* Layout de Container */
 .container {
@@ -45,9 +47,8 @@ body {
 	margin: 0 auto;
 	background: white;
 }
-.fogo {
-	max-width: 932px;
-	margin: 0 auto;
+.container p, h1, h2 {
+	padding: 12px 0;
 }
 #image{
 	width: 100%;
@@ -61,7 +62,7 @@ body {
 	top: 0;
 	z-index: 999;
 	background: #1d1d1d;
-	padding: 4px;
+	padding: 6px;
 	box-shadow: 0 4px 5px black;
 }
 #nav-links, #position {
@@ -91,6 +92,53 @@ body {
 	padding: 4px;
 	font-family: marvel;
 }
-p {
-	padding: 10px 0;
+.jumbotron {
+	margin: auto;
+	max-width: 900px;
+	height: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('../imgs/fogo.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+.jumbotron .jumbotron-inner {
+	text-shadow: 3px 3px 3px black;
+	width: 56%;
+}
+.jumbotron.jumbotron-inner h2{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.jumbotron .jumbotron-inner p{
+	font-size: 20px;
+	font-weight: 350;
+	margin-bottom: 10px;
+}
+
+/* flexbox */
+.flex {
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex div {
+	flex: 1 1 350px;
+	 margin: 10px;
+}
+.flex img{
+	width: 100%;
+	border-radius: 10px;
+}
+.flex p{
+	width: 100%;
+	
+}
+.textbox {
 }

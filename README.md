@@ -7,3 +7,6 @@ Estou aberto para sugestões. Até o o momento foi desenvolvido:
  - Container
  - Nav-bar fixa
  - Conteúdo
+ - Flex-box
+ - Backgroud
+ - Jumbotron
