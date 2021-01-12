@@ -2,16 +2,22 @@
 
 /* Fontes Especiais */
 @font-face {
-  font-family: "gotham";
-  src: url(../fonts/gotham.woff) format("woff"), url("../fonts/gotham.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+	font-family: "gotham";
+	src: url(../fonts/gotham.woff) format("woff"), url("../fonts/gotham.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }
 @font-face {
-  font-family: "marvel";
-  src: url("../fonts/marvel.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
+	font-family: "marvel";
+	src: url("../fonts/marvel.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "american";
+	src: url("../fonts/american.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
 }
 
 /* Configurações Gerais */
@@ -35,36 +41,47 @@ body {
 /* Layout de Container */
 .container {
 	max-width: 900px;
-	padding: 8px 16px;
-	margin: auto;
+	padding: 10px 16px;
+	margin: 0 auto;
 	background: white;
+}
+.fogo {
+	max-width: 932px;
+	margin: 0 auto;
+}
+.fogo img{
+	width: 100%;
+	margin: 0:
 }
 
 /* Layout da Navbar */
 #nav-bar {
+	position: -webkit-sticky;
+	/* nescessário para o safari */
 	position: sticky;
 	top: 0;
+	z-index: 999;
 	background: #1d1d1d;
-	padding: 6px;
+	padding: 4px;
 	box-shadow: 0 4px 5px black;
 }
-#nav-links, #position{
+#nav-links, #position {
 	text-decoration: none;
 	text-align: center;
-	padding: 14px 20px;
+	padding: 8px 20px;
 	font-size: 20px;
 	letter-spacing: 1px;
 	font-family: marvel;
 	color: white;
 }
-#nav-links:link, #nav-links:visited{
+#nav-links:active, #nav-links:visited {
 	color: #fff;
-	padding: 12px 20px;
+	padding: 8px 20px;
 }
-#nav-links:hover{
+#nav-links:hover {
 	color: #ff3232;
 	background: #fff;
-	border-radius: 10px;
+	border-radius: 6px;
 }
 
 /* Desing de Logo */
@@ -72,9 +89,9 @@ body {
 	text-align: center;
 	color: #a21d35;
 	font-size: 56px;
-	padding: 14px;
+	padding: 4px;
 	font-family: marvel;
-} 
+}
 p {
 	padding: 10px 0;
 }
