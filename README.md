@@ -1,5 +1,5 @@
 # Blog Pessoal :godmode:
-Site simples em desenvolvimento com o propósito de colocar em pratica meus conhecimentos e deixar um HTML bem semântico.
+Site simples em desenvolvimento com o propósito de colocar em pratica meus conhecimentos, um HTML bem semântico e totalmente desenvolvido pelo android.
 ## Projeto :bulb:
 Estou aberto para sugestões. Até o o momento foi desenvolvido:
  - Cabeçalho do site
@@ -10,3 +10,7 @@ Estou aberto para sugestões. Até o o momento foi desenvolvido:
  - Flex-box
  - Backgroud
  - Jumbotron
+ - Links verticais
+ - Sobre
+ - Contato
+ - Favicon

@@ -38,7 +38,10 @@ body {
 	background: url('../imgs/backgroud.jpeg');
 	font-family: gotham;
 }
-
+h1 {
+	top:0;
+	z-index: 999;
+}
 
 /* Layout de Container */
 .container {
@@ -58,9 +61,9 @@ body {
 #nav-bar {
 	position: -webkit-sticky;
 	/* nescessário para o safari */
-	position: sticky;
-	top: 0;
-	z-index: 999;
+	position: sticky; /* fixa o elemento*/
+	top: 0; /* Colado no topo */
+	z-index: 999; /* Nenhum item estára a cima do elemento */
 	background: #1d1d1d;
 	padding: 6px;
 	box-shadow: 0 4px 5px black;
@@ -74,7 +77,7 @@ body {
 	font-family: marvel;
 	color: white;
 }
-#nav-links:active, #nav-links:visited {
+#nav-links:link, #nav-links:visited {
 	color: #fff;
 	padding: 8px 20px;
 }
@@ -92,6 +95,8 @@ body {
 	padding: 4px;
 	font-family: marvel;
 }
+
+/* Apresentação que apelidei de Jumbotron */
 .jumbotron {
 	margin: auto;
 	max-width: 900px;
@@ -121,7 +126,7 @@ body {
 	margin-bottom: 10px;
 }
 
-/* flexbox */
+/* flexbox que adapta o conteudo*/
 .flex {
 	max-width: 900px;
 	margin: auto;
@@ -135,10 +140,26 @@ body {
 .flex img{
 	width: 100%;
 	border-radius: 10px;
-}
+} /*Lado a Lado, Texto ou imagem ocuparão o mesmo espaço*/
 .flex p{
 	width: 100%;
-	
 }
-.textbox {
+
+#sobre, #contato {
+margin-bottom: 130px;
+}
+
+/* Rodapé */
+#bottom p{
+	background: grey;
+	color: white;
+	padding: 10px;
+	max-width: 900px;
+	text-align: center;
+	margin: auto;
+}
+
+/* Pequeno espaço para distanciar conteúdo */
+#space {
+	margin: 30px 0;
 }
