@@ -35,7 +35,10 @@
 /* Corpo da Pagina */
 body {
 	font-size: 16px;
-	background: url('../imgs/backgroud.jpeg');
+	background: url('../imgs/backgroud.jpg');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
 	font-family: gotham;
 }
 h1 {
